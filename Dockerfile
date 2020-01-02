@@ -4,5 +4,5 @@ RUN pip3 install docker
 RUN pip3 install paramiko
 RUN git clone https://github.com/fjacob21/plex-monitor.git /plex-monitor
 COPY configs.json /plex-monitor
-# ENTRYPOINT ["/plex-monitor/plexmonitor.py"]
+ENTRYPOINT ["/plex-monitor/plexmonitor.py"]
 
